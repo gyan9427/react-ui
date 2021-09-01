@@ -6,6 +6,7 @@ import {
   Button,
   Container,
 } from '@material-ui/core'
+import { AcUnitOutlined } from '@material-ui/icons'
 
 const theme = createTheme()
 
@@ -33,6 +34,7 @@ export default function Notes() {
           Submit
         </Button>
       </ThemeProvider>
+      <AcUnitOutlined />
     </Container>
   )
 }
