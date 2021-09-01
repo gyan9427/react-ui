@@ -1,5 +1,11 @@
 import React from 'react'
-import { Typography, ThemeProvider, createTheme } from '@material-ui/core'
+import {
+  Typography,
+  ThemeProvider,
+  createTheme,
+  Button,
+  Container,
+} from '@material-ui/core'
 
 const theme = createTheme()
 
@@ -15,12 +21,18 @@ theme.typography.h1 = {
 
 export default function Notes() {
   return (
-    <div>
+    <Container>
       <ThemeProvider theme={theme}>
         <Typography variant='h1' align='left' gutterBottom>
           Notes page
         </Typography>
+        <Button type='submit' color='primary'>
+          Submit
+        </Button>
+        <Button type='submit' color='secondary' variant='outlined'>
+          Submit
+        </Button>
       </ThemeProvider>
-    </div>
+    </Container>
   )
 }
